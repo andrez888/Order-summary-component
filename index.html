@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <style>
+    body{
+      font-size: 16px;
+      font-family: "Red Hat Display", sans-serif;
+      background-color: hsl(225, 100%, 94%)
+    }
+    .container{
+      background-color: white;
+      display: flex;
+      width: 360px;
+      height: 570px;
+      margin: 60px auto;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5%;
+      overflow: hidden;
+    }
+    img{
+      width: 100%;
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    h1{
+      margin-top: 35px;
+      font-weight: 900;
+      font-size: 1.8rem;
+      margin-bottom: 0;
+      margin-top: 25px;
+    }
+    p{
+      text-align: center;
+      margin-left: 30px;
+      margin-right: 30px;
+      font-weight:500;
+    }
+    .plan{
+      display: flex;
+      background-color:  hsl(225, 100%, 98%);
+      margin: 0% 20px;
+      border-radius: 7%;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 80px;
+      margin-bottom: 30px;
+    }
+    .button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      height: 50px;
+      width: 270px; 
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      font-weight: 700;
+    }
+    .plan > p{
+      margin-left: 10px;
+      font-weight: 700;
+   }
+   .plan a{
+    font-weight: 700;
+   }
+   span{
+    margin-left: 10px;
+    font-weight: 500;
+   }
+    .link{
+      text-decoration: none;
+    }
+    .second{
+      color:hsl(224, 23%, 55%);
+      margin-top: 20px;
+    }
+    .second:hover{
+      color: black;
+    }
+    .text{
+      color: hsl(224, 23%, 55%);
+    }
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="./images/illustration-hero.svg" alt="hero">
+    <h1>Order Summary</h1>
+
+  <div class="text"><p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p></div>
+  
+
+  <div class="plan">
+    <img src="./images/icon-music.svg" alt="">
+    <p>Annual Plan <br/>
+  <span>$59.99/year</span></p> <a href="">Change</a></div>
+
+  
+
+  <a href=""  class="link first"><div class="button">Proceed to Payment</div></a>
+  <a href="" class="link second">Cancel Order</a>
+  <div class="attribution">
+  
+  </div>
+  </div>
+  
+  
+  
+</body>
+</html>
